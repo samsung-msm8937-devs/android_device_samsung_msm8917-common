@@ -144,7 +144,6 @@ vendor/lib/libjpegdhw.so
 vendor/lib/libjpegdmahw.so
 vendor/lib/libjpegehw.so
 vendor/lib/libmediacodecservice.so
-vendor/lib/libminijail_vendor.so
 vendor/lib/libmm-qcamera.so
 vendor/lib/libmmcamera_sonyimx135_eeprom.so
 vendor/lib/libmmjpeg.so
@@ -1285,6 +1284,9 @@ vendor/lib/vendor.samsung.security.skpm@1.0.so
 vendor/lib/vendor.qti.hardware.sensorscalibrate@1.0.so
 
 # Sensors
+vendor/bin/hw/android.hardware.sensors@1.0-service
+vendor/etc/init/android.hardware.sensors@1.0-service.rc
+vendor/lib/hw/android.hardware.sensors@1.0-impl.so
 vendor/lib/hw/sensors.msm8937.so
 vendor/lib/libsensorlistener.so
 vendor/lib/libsensorndkbridge.so
