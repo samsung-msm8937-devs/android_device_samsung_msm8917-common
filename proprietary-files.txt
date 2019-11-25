@@ -1048,18 +1048,7 @@ vendor/lib/libOmxVenc.so
 vendor/lib/libstagefrighthw.so
 
 # NFC
-etc/nfcee_access.xml
-vendor/bin/hw/nxp.android.hardware.nfc@1.1-service
-vendor/etc/init/nxp.android.hardware.nfc@1.1-service.rc
-vendor/etc/libnfc-nci.conf
-vendor/etc/libnfc-nxp.conf
-vendor/etc/nfc/libnfc-nxp_RF.conf
-vendor/etc/permissions/com.android.nfc_extras.xml
-vendor/etc/permissions/com.nxp.mifare.xml
 vendor/firmware/nfc/libpn553_fw.so
-vendor/lib/nfc_nci_nxp.so
-vendor/lib/vendor.nxp.nxpnfc@1.0.so
-vendor/lib/vendor.nxp.nxpnfc@1.1.so
 
 # Perf
 vendor/bin/hw/vendor.qti.hardware.perf@1.0-service
@@ -1343,7 +1332,6 @@ vendor/etc/init/init.vendor.rilchip.rc
 vendor/etc/init/init.vendor.rilcommon.rc
 vendor/etc/init/wifi.rc
 vendor/etc/init/wifi_qcom.rc
-vendor/etc/permissions/com.sec.feature.motionrecognition_service.xml
 vendor/etc/playback_record_audio_policy_configuration.xml
 vendor/etc/plmn_delta.bin
 vendor/etc/plmn_delta_attaio.bin
