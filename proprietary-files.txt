@@ -1173,7 +1173,6 @@ vendor/lib/vendor.qti.hardware.radio.uim_remote_client@1.0.so
 vendor/lib/vendor.qti.hardware.radio.uim_remote_server@1.0.so
 
 # Radio-IMS
--app/ImsSettings/ImsSettings.apk
 lib/libdiag_system.so
 vendor/lib/com.qualcomm.qti.imscmservice@1.0.so
 vendor/lib/com.qualcomm.qti.imscmservice@2.0.so
