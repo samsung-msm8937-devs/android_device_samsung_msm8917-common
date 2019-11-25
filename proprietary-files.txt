@@ -1385,8 +1385,6 @@ vendor/etc/carrier/VZW/permissions/android.hardware.telephony.cdma.xml
 vendor/etc/carrier/XAS/permissions/android.hardware.telephony.cdma.xml
 vendor/etc/init/init.vendor.rilchip.rc
 vendor/etc/init/init.vendor.rilcommon.rc
-vendor/etc/init/wifi.rc
-vendor/etc/init/wifi_qcom.rc
 vendor/etc/playback_record_audio_policy_configuration.xml
 vendor/etc/plmn_delta.bin
 vendor/etc/plmn_delta_attaio.bin
@@ -1399,8 +1397,6 @@ vendor/etc/sec_config_oem
 vendor/etc/somxreg.conf
 vendor/etc/SoundBoosterParam.txt
 vendor/etc/tms_audio_policy_configuration.xml
-vendor/etc/wlan_common_rc
-vendor/etc/wlan_vendor_rc
 vendor/lib/libdiagjni.so
 vendor/lib/libfastcrc.so
 vendor/lib/libfloatingfeature.so
