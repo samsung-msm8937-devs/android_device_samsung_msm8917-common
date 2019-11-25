@@ -1289,7 +1289,6 @@ vendor/lib/vendor.qti.hardware.sensorscalibrate@1.0.so
 vendor/bin/hw/android.hardware.sensors@1.0-service
 vendor/etc/init/android.hardware.sensors@1.0-service.rc
 vendor/lib/hw/android.hardware.sensors@1.0-impl.so
-vendor/lib/hw/sensors.msm8937.so
 vendor/lib/libsensorlistener.so
 vendor/lib/libsensorndkbridge.so
 
