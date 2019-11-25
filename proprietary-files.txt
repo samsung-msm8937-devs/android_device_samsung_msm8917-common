@@ -916,9 +916,6 @@ vendor/lib/libgnsspps.so
 vendor/lib/libgps.utils.so
 
 # Gatekeeper
-vendor/bin/hw/android.hardware.gatekeeper@1.0-service
-vendor/etc/init/android.hardware.gatekeeper@1.0-service.rc
-vendor/lib/android.hardware.gatekeeper@1.0-impl.so
 vendor/lib/hw/gatekeeper.mdfpp.so
 vendor/lib/hw/gatekeeper.msm8937.so
 
