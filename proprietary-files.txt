@@ -1134,6 +1134,7 @@ vendor/lib/libpdnotifier.so
 vendor/lib/libqcmaputils.so
 vendor/lib/libqrtr.so
 vendor/lib/libqsocket.so
+-vendor/lib/libril.so
 vendor/lib/libsystem_health_mon.so
 vendor/lib/vendor.qti.hardware.radio.am@1.0.so
 vendor/lib/vendor.qti.hardware.radio.atcmdfwd@1.0.so
@@ -1281,7 +1282,6 @@ vendor/bin/cnss_diag
 
 # rootdir
 vendor/bin/adpl
-vendor/bin/hw/rild
 vendor/bin/ipacm-diag
 vendor/bin/ptt_socket_app
 
