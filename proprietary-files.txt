@@ -1356,7 +1356,6 @@ vendor/bin/fmfactorytest
 vendor/bin/fmfactorytestserver
 vendor/bin/hal_proxy_daemon
 vendor/bin/hw/macloader
-vendor/bin/hw/mfgloader
 vendor/bin/mm-qjpeg-dec-test
 vendor/bin/mm-qjpeg-enc-test
 vendor/bin/mm-qomx-idec-test
@@ -1419,7 +1418,6 @@ vendor/lib/libsi.so
 vendor/lib/libsnap_caffe.so
 vendor/lib/libsnap_caffe_wrapper.so
 vendor/lib/libsnap_vndk.so
-vendor/lib/libssl.so
 vendor/lib/libstagefright_bufferqueue_helper_vendor.so
 vendor/lib/libstagefright_omx_utils.so
 vendor/lib/libstagefright_omx_vendor.so
