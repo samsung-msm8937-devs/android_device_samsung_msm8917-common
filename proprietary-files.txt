@@ -124,6 +124,10 @@ vendor/lib/vendor.qti.hardware.data.qmi@1.0.so
 
 # Camera
 vendor/lib/hw/camera.msm8937.so
+vendor/lib/camera.device@1.0-impl.so
+vendor/lib/camera.device@3.2-impl.so
+vendor/lib/camera.device@3.3-impl.so
+vendor/lib/camera.device@3.4-impl.so
 vendor/lib/libbase64.so
 vendor/lib/libcapiv2svacnn.so
 vendor/lib/libcapiv2vop.so
