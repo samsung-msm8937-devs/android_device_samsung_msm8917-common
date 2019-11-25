@@ -1334,6 +1334,7 @@ vendor/lib/libhdcpsrm.so
 # WiFi
 vendor/bin/cnss-daemon
 vendor/bin/cnss_diag
+vendor/bin/wlandutservice
 
 # rootdir
 vendor/bin/adpl
