@@ -128,29 +128,67 @@ vendor/lib/camera.device@1.0-impl.so
 vendor/lib/camera.device@3.2-impl.so
 vendor/lib/camera.device@3.3-impl.so
 vendor/lib/camera.device@3.4-impl.so
+vendor/lib/com.candycamera.android.filter.libcookiencream.so
+vendor/lib/com.candycamera.android.filter.libeveryday.so
+vendor/lib/com.linecorp.b612.filter.libriddle.so
+vendor/lib/com.pinguo.camera360filter.libmemory.so
+vendor/lib/com.thundersoft.ucamera.filter.libmaple.so
+vendor/lib/com.thundersoft.ucamera.filter.libnostalgia.so
 vendor/lib/libbase64.so
 vendor/lib/libcapiv2svacnn.so
 vendor/lib/libcapiv2vop.so
+vendor/lib/libchromaflash.so
 vendor/lib/libflash_pmic.so
 vendor/lib/libgui_vendor.so
 vendor/lib/libjpegdhw.so
 vendor/lib/libjpegdmahw.so
 vendor/lib/libjpegehw.so
+vendor/lib/libmediacodecservice.so
+vendor/lib/libminijail_vendor.so
 vendor/lib/libmm-qcamera.so
 vendor/lib/libmmcamera_sonyimx135_eeprom.so
 vendor/lib/libmmjpeg.so
 vendor/lib/libmmjpeg_interface.so
 vendor/lib/libmmqjpegdma.so
 vendor/lib/libmmqjpeg_codec.so
+vendor/lib/liboptizoom.so
 vendor/lib/libqomx_core.so
 vendor/lib/libqomx_jpegdec.so
 vendor/lib/libqomx_jpegenc.so
 vendor/lib/libqomx_jpegenc_pipe.so
 vendor/lib/libremosaiclib.so
 vendor/lib/libremosaic_daemon.so
+vendor/lib/libsaiv.so
+vendor/lib/libsaiv_BeautySolution.so
+vendor/lib/libsaiv_BeautySolutionLite.so
+vendor/lib/libsaiv_FacePreProcessing.so
+vendor/lib/libsaiv_HprFace_FD_api.so
+vendor/lib/libsaiv_HprFace_FD_jni.so
+vendor/lib/libsaiv_HprFace_GAE_api.so
+vendor/lib/libsaiv_HprFace_GAE_jni.so
+vendor/lib/libsaiv_HprFace_LD_api.so
+vendor/lib/libsaiv_HprFace_LD_jni.so
+vendor/lib/libsaiv_HprFace_utils_api.so
+vendor/lib/libsaiv_HprFace_utils_jni.so
+vendor/lib/libsaiv_vision.so
+vendor/lib/libsechelper_engine.so
+vendor/lib/libsecimaging.so
+vendor/lib/libsecjpeginterface.so
+vendor/lib/libsecjpegquram.so
+vendor/lib/libsecpkcs11_engine.so
+vendor/lib/libsemcamera_jni.so
+vendor/lib/libstr_capture_core.so
+vendor/lib/libstr_capture_interface.so
+vendor/lib/libstr_preview_interface.so
 vendor/lib/libswvdec.so
+vendor/lib/libts_detected_face_hal.so
+vendor/lib/libts_face_beautify_hal.so
+vendor/lib/libubifocus.so
 vendor/lib/libvideoutils.so
+vendor/lib/mactavishao.hardware.graphics.common@1.0.so
+vendor/lib/mactavishao.hardware.camera.device@3.2.so
 vendor/lib/vendor.qti.hardware.camera.device@1.0.so
+vendor/lib/vendor.qti.hardware.camera.device@1.0_vendor.so
 
 # Camera-actuators
 vendor/lib/libactuator_dw9808.so
@@ -158,7 +196,7 @@ vendor/lib/libactuator_dw9808.so
 # Camera-bin
 vendor/bin/hw/vendor.samsung.hardware.camera.provider@2.4-service
 vendor/bin/mm-qcamera-app
-vendor/bin/mm-qcamera-daemon
+vendor/bin/mm-vidc-omx-test
 
 # Camera-chromatix
 vendor/lib/libchromatix_csidtg_common.so
@@ -644,11 +682,11 @@ vendor/lib/libmmcamera2_mct_shimlayer.so
 vendor/lib/libmmcamera2_pproc_modules.so
 vendor/lib/libmmcamera2_pp_buf_mgr.so
 vendor/lib/libmmcamera2_q3a_core.so
-vendor/lib/libmmcamera2_sensor_modules.so
 vendor/lib/libmmcamera2_stats_algorithm.so
 vendor/lib/libmmcamera2_stats_modules.so
 vendor/lib/libmmcamera_atmel_at24c32e_eeprom.so
 vendor/lib/libmmcamera_cac3_lib.so
+vendor/lib/libmmcamera_chromaflash_lib.so
 vendor/lib/libmmcamera_dbg.so
 vendor/lib/libmmcamera_dcrf_lib.so
 vendor/lib/libmmcamera_dummyalgo.so
@@ -661,6 +699,7 @@ vendor/lib/libmmcamera_eztune_module.so
 vendor/lib/libmmcamera_facedetection_lib.so
 vendor/lib/libmmcamera_faceproc.so
 vendor/lib/libmmcamera_faceproc2.so
+vendor/lib/libmmcamera_gt24c64a_eeprom.so
 vendor/lib/libmmcamera_gt24c128_eeprom.so
 vendor/lib/libmmcamera_gt24c128_sub_eeprom.so
 vendor/lib/libmmcamera_hdr_gb_lib.so
@@ -705,12 +744,15 @@ vendor/lib/libmmcamera_isp_template.so
 vendor/lib/libmmcamera_isp_wb40.so
 vendor/lib/libmmcamera_le2464c_eeprom.so
 vendor/lib/libmmcamera_le2464c_master_eeprom.so
+vendor/lib/libmmcamera_llvd.so
 vendor/lib/libmmcamera_lsi_s5k5e3yx_eeprom.so
 vendor/lib/libmmcamera_lsi_s5k5e9yx_otp_eeprom.so
 vendor/lib/libmmcamera_onsemi_cat24c16_eeprom.so
 vendor/lib/libmmcamera_onsemi_cat24c32_eeprom.so
 vendor/lib/libmmcamera_onsemi_cat24c32_imx362_eeprom.so
 vendor/lib/libmmcamera_onsemi_cat24c64_eeprom.so
+vendor/lib/libmmcamera_onsemi_cat24s128_eeprom.so
+vendor/lib/libmmcamera_optizoom_lib.so
 vendor/lib/libmmcamera_ov4688_eeprom.so
 vendor/lib/libmmcamera_paaf_lib.so
 vendor/lib/libmmcamera_pdaf.so
@@ -722,11 +764,15 @@ vendor/lib/libmmcamera_qtech_f5670bq_eeprom.so
 vendor/lib/libmmcamera_quadracfa.so
 vendor/lib/libmmcamera_rohm_brcg064gwz_3_eeprom.so
 vendor/lib/libmmcamera_s5k3l6xx.so
+vendor/lib/libmmcamera_s5k4h5yc.so
+vendor/lib/libmmcamera_s5k4hayx.so
+vendor/lib/libmmcamera_s5k5e9yx.so
 vendor/lib/libmmcamera_s5k5e9yx_front.so
 vendor/lib/libmmcamera_silicon_sr544_eeprom.so
 vendor/lib/libmmcamera_sony_imx214_eeprom.so
 vendor/lib/libmmcamera_sony_imx298_eeprom.so
 vendor/lib/libmmcamera_sony_imx378_eeprom.so
+vendor/lib/libmmcamera_stillmore_lib.so
 vendor/lib/libmmcamera_stm_m24c64s_fcu_eeprom.so
 vendor/lib/libmmcamera_sunny_8865_eeprom.so
 vendor/lib/libmmcamera_sunny_gt24c64a_imx362_eeprom.so
@@ -738,8 +784,10 @@ vendor/lib/libmmcamera_sw2d_lib.so
 vendor/lib/libmmcamera_thread_services.so
 vendor/lib/libmmcamera_tintless_algo.so
 vendor/lib/libmmcamera_tintless_bg_pca_algo.so
+vendor/lib/libmmcamera_trueportrait_lib.so
 vendor/lib/libmmcamera_truly_cma481_eeprom.so
 vendor/lib/libmmcamera_truly_cmb433_eeprom.so
+vendor/lib/libmmcamera_ubifocus_lib.so
 
 # Charger
 vendor/bin/hvdcp_opti
