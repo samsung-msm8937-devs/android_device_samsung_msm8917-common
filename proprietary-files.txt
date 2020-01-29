@@ -956,17 +956,28 @@ vendor/lib/vendor.qti.hardware.iop@1.0.so
 vendor/lib/vendor.qti.hardware.iop@2.0.so
 
 # Keymaster
+vendor/app/mcRegistry/07010000000000000000000000000000.tlbin
 vendor/bin/hw/android.hardware.keymaster@3.0-service
+vendor/bin/mcDriverDaemon
 vendor/etc/init/android.hardware.keymaster@3.0-service.rc
 vendor/lib/hw/android.hardware.keymaster@3.0-impl.so
+vendor/lib/hw/keystore.mdfpp.so
+vendor/lib/hw/keystore.msm8937.so
+vendor/lib/hw/vendor.samsung.security.skeymaster@3.0-impl.so
 vendor/lib/libkeymaster2_mdfpp.so
-vendor/lib/libkeymaster3device.so
 vendor/lib/libkeymasterdeviceutils.so
 vendor/lib/libkeymasterprovision.so
 vendor/lib/libkeymasterutils.so
+vendor/lib/libkeymaster_helper.so
 vendor/lib/libkeymaster_helper_vendor.so
+vendor/lib/libmackeymaster_portable.so
+vendor/lib/libmackeymaster_staging.so
+vendor/lib/libmacsoftkeymasterdevice.so
 vendor/lib/libqtikeymaster4.so
 vendor/lib/libskeymaster3device.so
+vendor/lib/libwifiucmkeystorehal.so
+vendor/lib/vendor.samsung.security.skeymaster@3.0_vendor.so
+vendor/lib/vendor.samsung.security.wvkprov_server@1.0.so
 
 # Keystore
 vendor/lib/hw/keystore.mdfpp.so
@@ -1242,7 +1253,6 @@ vendor/lib/vendor.samsung.hardware.wifi.supplicant@1.0.so
 vendor/lib/vendor.samsung.hardware.wifi@1.0.so
 vendor/lib/vendor.samsung.security.sem@1.0.so
 vendor/lib/vendor.samsung.security.skpm@1.0.so
-vendor/lib/vendor.samsung.security.wvkprov_server@1.0.so
 
 # Sensor-calibrate
 vendor/lib/vendor.qti.hardware.sensorscalibrate@1.0.so
@@ -1302,7 +1312,6 @@ vendor/bin/ipacm-diag
 vendor/bin/ptt_socket_app
 
 # Misc
-vendor/app/mcRegistry/07010000000000000000000000000000.tlbin
 vendor/bin/athdiag
 vendor/bin/cplay
 vendor/bin/diag_callback_sample
@@ -1318,9 +1327,6 @@ vendor/bin/fmfactorytestserver
 vendor/bin/hal_proxy_daemon
 vendor/bin/hw/macloader
 vendor/bin/hw/mfgloader
-vendor/bin/hw/vendor.trustonic.tee@1.0-service
-vendor/bin/hw/vendor.trustonic.teeregistry@1.0-service
-vendor/bin/mcDriverDaemon
 vendor/bin/mm-qjpeg-dec-test
 vendor/bin/mm-qjpeg-enc-test
 vendor/bin/mm-qomx-idec-test
@@ -1350,8 +1356,6 @@ vendor/etc/carrier/VZW/permissions/android.hardware.telephony.cdma.xml
 vendor/etc/carrier/XAS/permissions/android.hardware.telephony.cdma.xml
 vendor/etc/init/init.vendor.rilchip.rc
 vendor/etc/init/init.vendor.rilcommon.rc
-vendor/etc/init/vendor.trustonic.tee@1.0-service.rc
-vendor/etc/init/vendor.trustonic.teeregistry@1.0-service.rc
 vendor/etc/init/wifi.rc
 vendor/etc/init/wifi_qcom.rc
 vendor/etc/permissions/com.sec.feature.motionrecognition_service.xml
@@ -1369,7 +1373,6 @@ vendor/etc/SoundBoosterParam.txt
 vendor/etc/tms_audio_policy_configuration.xml
 vendor/etc/wlan_common_rc
 vendor/etc/wlan_vendor_rc
-vendor/lib/libcrypto.so
 vendor/lib/libdiagjni.so
 vendor/lib/libfastcrc.so
 vendor/lib/libfloatingfeature.so
@@ -1411,5 +1414,3 @@ vendor/lib/soundfx/libmysound.so
 vendor/lib/soundfx/libmyspace.so
 vendor/lib/soundfx/libplaybackrecorder.so
 vendor/lib/soundfx/libswdap.so
-vendor/lib/vendor.trustonic.tee@1.0.so
-vendor/lib/vendor.trustonic.teeregistry@1.0.so
