@@ -389,6 +389,11 @@ PRODUCT_SOONG_NAMESPACES += \
 # Telephony
 PRODUCT_PACKAGES += \
     telephony-ext
+
+# IMS
+PRODUCT_PACKAGES += \
+    ims-ext-common \
+    ims_ext_common.xml
     
 # TextClassifier
 PRODUCT_PACKAGES += \
