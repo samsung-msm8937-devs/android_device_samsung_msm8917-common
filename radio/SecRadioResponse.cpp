@@ -23,9 +23,19 @@ namespace radio {
 namespace V1_2 {
 namespace implementation {
 
-SecRadioResponse::SecRadioResponse(int simSlot, const sp<::android::hardware::audio::V5_0::IPrimaryDevice>& audioDevice,
-        const sp<::android::hardware::radio::V1_2::IRadioResponse>& radioResponse) :
-                simSlot(simSlot), audioDevice(audioDevice), radioResponse(radioResponse) {
+SecRadioResponse::SecRadioResponse(int simSlot, const sp<::android::hardware::radio::V1_2::IRadioResponse>& radioResponse) :
+        simSlot(simSlot), radioResponse(radioResponse) {
+}
+
+sp<::android::hardware::audio::V5_0::IPrimaryDevice> SecRadioResponse::getAudioDevice() {
+    std::lock_guard<std::mutex> lock(audioDeviceMutex);
+    if (!audioDevice) {
+        ::android::hardware::audio::V5_0::IDevicesFactory::getService()->openPrimaryDevice(
+                [&](::android::hardware::audio::V5_0::Result, const sp<::android::hardware::audio::V5_0::IPrimaryDevice>& result) {
+                    audioDevice = result;
+                });
+    }
+    return audioDevice;
 }
 
 // Methods from ::android::hardware::radio::V1_0::IRadioResponse follow.
@@ -78,7 +88,7 @@ Return<void> SecRadioResponse::dialResponse(const ::android::hardware::radio::V1
     callOnHoldMutex.lock();
     callOnHold = false;
     callOnHoldMutex.unlock();
-    audioDevice->setParameters({
+    getAudioDevice()->setParameters({
         {AUDIO_PARAMETER_KEY_VSID, std::to_string(simSlot == 1 ? VOICEMMODE1_VSID : VOICEMMODE2_VSID)},
         {AUDIO_PARAMETER_KEY_CALL_STATE, std::to_string(CALL_ACTIVE)}}, {});
     radioResponse->dialResponse(info);
@@ -92,7 +102,7 @@ Return<void> SecRadioResponse::getIMSIForAppResponse(const ::android::hardware::
 
 Return<void> SecRadioResponse::hangupConnectionResponse(const ::android::hardware::radio::V1_0::RadioResponseInfo& info) {
     radioResponse->hangupConnectionResponse(info);
-    audioDevice->setParameters({
+    getAudioDevice()->setParameters({
         {AUDIO_PARAMETER_KEY_VSID, std::to_string(simSlot == 1 ? VOICEMMODE1_VSID : VOICEMMODE2_VSID)},
         {AUDIO_PARAMETER_KEY_CALL_STATE, std::to_string(CALL_INACTIVE)}}, {});
     callOnHold = false;
@@ -111,7 +121,7 @@ Return<void> SecRadioResponse::hangupForegroundResumeBackgroundResponse(const ::
 
 Return<void> SecRadioResponse::switchWaitingOrHoldingAndActiveResponse(const ::android::hardware::radio::V1_0::RadioResponseInfo& info) {
     radioResponse->switchWaitingOrHoldingAndActiveResponse(info);
-    audioDevice->setParameters({
+    getAudioDevice()->setParameters({
         {AUDIO_PARAMETER_KEY_VSID, std::to_string(simSlot == 1 ? VOICEMMODE1_VSID : VOICEMMODE2_VSID)},
         {AUDIO_PARAMETER_KEY_CALL_STATE, std::to_string(callOnHold ? CALL_HOLD : CALL_ACTIVE)}}, {});
     callOnHoldMutex.lock();
@@ -234,7 +244,7 @@ Return<void> SecRadioResponse::acceptCallResponse(const ::android::hardware::rad
     callOnHoldMutex.lock();
     callOnHold = false;
     callOnHoldMutex.unlock();
-    audioDevice->setParameters({
+    getAudioDevice()->setParameters({
         {AUDIO_PARAMETER_KEY_VSID, std::to_string(simSlot == 1 ? VOICEMMODE1_VSID : VOICEMMODE2_VSID)},
         {AUDIO_PARAMETER_KEY_CALL_STATE, std::to_string(CALL_ACTIVE)}}, {});
     radioResponse->acceptCallResponse(info);
