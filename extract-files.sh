@@ -18,7 +18,7 @@
 
 set -e
 
-DEVICE=msm8917-common
+DEVICE_COMMON=msm8917-common
 VENDOR=samsung
 
 # Load extract_utils and do some sanity checks
@@ -59,11 +59,9 @@ if [ -z "${SRC}" ]; then
     SRC=adb
 fi
 
-# Initialize the helper
-setup_vendor "${DEVICE}" "${VENDOR}" "${LINEAGE_ROOT}" false "${CLEAN_VENDOR}"
+# Initialize the helper for common device
+setup_vendor "${DEVICE_COMMON}" "${VENDOR}" "${LINEAGE_ROOT}" true "${CLEAN_VENDOR}"
 
 extract "${MY_DIR}/proprietary-files.txt" "${SRC}" ${KANG} --section "${SECTION}"
-
-BLOB_ROOT="$LINEAGE_ROOT"/vendor/"$VENDOR"/"$DEVICE"/proprietary
 
 "${MY_DIR}/setup-makefiles.sh"

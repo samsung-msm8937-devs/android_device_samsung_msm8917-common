@@ -18,7 +18,7 @@
 
 set -e
 
-DEVICE=msm8917-common
+DEVICE_COMMON=msm8917-common
 VENDOR=samsung
 
 INITIAL_COPYRIGHT_YEAR=2019
@@ -36,11 +36,11 @@ if [ ! -f "$HELPER" ]; then
 fi
 . "$HELPER"
 
-# Initialize the helper
-setup_vendor "$DEVICE" "$VENDOR" "$LINEAGE_ROOT"
+# Initialize the helper for common
+setup_vendor "$DEVICE_COMMON" "$VENDOR" "$LINEAGE_ROOT" true
 
 # Copyright headers and guards
-write_headers
+write_headers "j4primelte j6primelte"
 
 write_makefiles "$MY_DIR"/proprietary-files.txt true
 
