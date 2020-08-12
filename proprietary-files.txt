@@ -16,7 +16,6 @@ vendor/lib/rfsa/adsp/libfastcvadsp_skel.so
 
 # ANT
 lib/com.qualcomm.qti.ant@1.0.so
--lib/libantradio.so
 vendor/lib/com.qualcomm.qti.ant@1.0.so
 vendor/lib/hw/com.qualcomm.qti.ant@1.0-impl.so
 
