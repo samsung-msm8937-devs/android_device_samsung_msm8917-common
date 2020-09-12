@@ -427,6 +427,7 @@ PRODUCT_PACKAGES += \
     libQWiFiSoftApCfg \
     libwpa_client \
     hostapd \
+    macloader \
     dhcpcd.conf \
     wificond \
     libwifi-hal-qcom \
