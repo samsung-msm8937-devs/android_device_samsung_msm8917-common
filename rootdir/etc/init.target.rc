@@ -231,7 +231,6 @@ service wcnss-service /system/vendor/bin/wcnss_service
     oneshot
 
 on charger
-    load_system_props
     setprop sys.usb.configfs 1
     start qcom-post-boot
     setprop persist.sys.usb.config mass_storage
