@@ -994,6 +994,10 @@
         <ctl name="DEC2 MUX" value="ADC1" />
         <ctl name="ADC2 MUX" value="INP3" />
     </path>
+
+	<path name="camcorder-sub-mic">
+        <ctl name="DEC1 MUX" value="ADC1" />
+    </path>
     <!-- end of Device -->
 
     <!-- ================================================================ -->
