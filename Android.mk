@@ -198,4 +198,78 @@ $(WCNSS_SYMLINKS): $(LOCAL_INSTALLED_MODULE)
 
 ALL_DEFAULT_INSTALLED_MODULES += $(WCNSS_SYMLINKS)
 
+ACDB_BRI_SYMLINKS := $(TARGET_OUT_VENDOR)/etc/audconf/BRI
+$(ACDB_BRI_SYMLINKS): $(LOCAL_INSTALLED_MODULE)
+	@echo "Creating ACDB folder structure: $@"
+	@rm -rf $@/*
+	@mkdir -p $(dir $@)
+	$(hide) ln -sf /vendor/etc/audconf/OPEN $@
+
+ACDB_GLB_SYMLINKS := $(TARGET_OUT_VENDOR)/etc/audconf/GLB
+$(ACDB_GLB_SYMLINKS): $(LOCAL_INSTALLED_MODULE)
+	@echo "Creating ACDB folder structure: $@"
+	@rm -rf $@/*
+	@mkdir -p $(dir $@)
+	$(hide) ln -sf /vendor/etc/audconf/OPEN $@
+
+ACDB_PNG_SYMLINKS := $(TARGET_OUT_VENDOR)/etc/audconf/PNG
+$(ACDB_PNG_SYMLINKS): $(LOCAL_INSTALLED_MODULE)
+	@echo "Creating ACDB folder structure: $@"
+	@rm -rf $@/*
+	@mkdir -p $(dir $@)
+	$(hide) ln -sf /vendor/etc/audconf/OPEN $@
+
+ACDB_SMA_SYMLINKS := $(TARGET_OUT_VENDOR)/etc/audconf/SMA
+$(ACDB_SMA_SYMLINKS): $(LOCAL_INSTALLED_MODULE)
+	@echo "Creating ACDB folder structure: $@"
+	@rm -rf $@/*
+	@mkdir -p $(dir $@)
+	$(hide) ln -sf /vendor/etc/audconf/OPEN $@
+
+ACDB_TNZ_SYMLINKS := $(TARGET_OUT_VENDOR)/etc/audconf/TNZ
+$(ACDB_TNZ_SYMLINKS): $(LOCAL_INSTALLED_MODULE)
+	@echo "Creating ACDB folder structure: $@"
+	@rm -rf $@/*
+	@mkdir -p $(dir $@)
+	$(hide) ln -sf /vendor/etc/audconf/OPEN $@
+
+ACDB_VFJ_SYMLINKS := $(TARGET_OUT_VENDOR)/etc/audconf/VFJ
+$(ACDB_VFJ_SYMLINKS): $(LOCAL_INSTALLED_MODULE)
+	@echo "Creating ACDB folder structure: $@"
+	@rm -rf $@/*
+	@mkdir -p $(dir $@)
+	$(hide) ln -sf /vendor/etc/audconf/OPEN $@
+
+ACDB_XNF_SYMLINKS := $(TARGET_OUT_VENDOR)/etc/audconf/XNF
+$(ACDB_XNF_SYMLINKS): $(LOCAL_INSTALLED_MODULE)
+	@echo "Creating ACDB folder structure: $@"
+	@rm -rf $@/*
+	@mkdir -p $(dir $@)
+	$(hide) ln -sf /vendor/etc/audconf/OPEN $@
+
+ACDB_XNZ_SYMLINKS := $(TARGET_OUT_VENDOR)/etc/audconf/XNZ
+$(ACDB_XNZ_SYMLINKS): $(LOCAL_INSTALLED_MODULE)
+	@echo "Creating ACDB folder structure: $@"
+	@rm -rf $@/*
+	@mkdir -p $(dir $@)
+	$(hide) ln -sf /vendor/etc/audconf/OPEN $@
+
+ACDB_XTC_SYMLINKS := $(TARGET_OUT_VENDOR)/etc/audconf/XTC
+$(ACDB_XTC_SYMLINKS): $(LOCAL_INSTALLED_MODULE)
+	@echo "Creating ACDB folder structure: $@"
+	@rm -rf $@/*
+	@mkdir -p $(dir $@)
+	$(hide) ln -sf /vendor/etc/audconf/OPEN $@
+
+ALL_DEFAULT_INSTALLED_MODULES += \
+    $(ACDB_BRI_SYMLINKS) \
+    $(ACDB_GLB_SYMLINKS) \
+    $(ACDB_PNG_SYMLINKS) \
+    $(ACDB_SMA_SYMLINKS) \
+    $(ACDB_TNZ_SYMLINKS) \
+    $(ACDB_VFJ_SYMLINKS) \
+    $(ACDB_XNF_SYMLINKS) \
+    $(ACDB_XNZ_SYMLINKS) \
+    $(ACDB_XTC_SYMLINKS) 
+
 endif
