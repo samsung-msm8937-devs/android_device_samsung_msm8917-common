@@ -156,6 +156,17 @@ service thermal-engine /system/vendor/bin/thermal-engine
    socket thermal-send-rule stream 0660 system system
    group root
 
+#Start NFC on supported variants
+service vendor.nfc_hal_service /vendor/bin/hw/android.hardware.nfc@1.2-service
+    override
+    class hal
+    user nfc
+    group nfc
+    disabled
+
+on property:ro.boot.product.hardware.sku=msm8917NFC
+    start vendor.nfc_hal_service
+
 service audiod /system/vendor/bin/audiod
    class late_start
    user system
