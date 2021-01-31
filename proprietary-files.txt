@@ -93,40 +93,47 @@ vendor/lib/libcdsp_default_listener.so
 vendor/lib/libfastrpc_utf_stub.so
 vendor/lib/libsysmon_cdsp_skel.so
 
-# CNE
-product/etc/permissions/vendor.qti.hardware.data.connection-V1.1-java.xml
--product/framework/com.quicinc.cne.api-V1.1-java.jar
--product/framework/com.quicinc.cne.constants-V1.0-java.jar
--product/framework/com.quicinc.cne.constants-V2.0-java.jar
--product/framework/com.quicinc.cne.constants-V2.1-java.jar
--product/framework/vendor.qti.data.slm-V1.0-java.jar
--product/framework/vendor.qti.hardware.data.cne.internal.api-V1.0-java.jar
--product/framework/vendor.qti.hardware.data.cne.internal.constants-V1.0-java.jar
--product/framework/vendor.qti.hardware.data.connection-V1.1-java.jar
--product/framework/vendor.qti.hardware.data.dynamicdds-V1.0-java.jar
--product/framework/vendor.qti.hardware.data.iwlan-V1.0-java.jar
--product/framework/vendor.qti.hardware.data.qmi-V1.0-java.jar
-product/lib/vendor.qti.data.slm@1.0.so
-product/lib/vendor.qti.hardware.data.connection@1.0.so
-product/lib/vendor.qti.hardware.data.connection@1.1.so
-product/lib/vendor.qti.hardware.data.dynamicdds@1.0.so
-product/lib/vendor.qti.hardware.data.iwlan@1.0.so
-vendor/bin/cnd
-vendor/etc/init/cnd.rc
-vendor/lib/libcne.so
-vendor/lib/libcneapiclient.so
-vendor/lib/libwms.so
-vendor/lib/libxml.so
-vendor/lib/vendor.qti.data.factory@1.0.so
-vendor/lib/vendor.qti.data.slm@1.0.so
-vendor/lib/vendor.qti.hardware.data.cne.internal.api@1.0.so
-vendor/lib/vendor.qti.hardware.data.cne.internal.constants@1.0.so
-vendor/lib/vendor.qti.hardware.data.cne.internal.server@1.0.so
-vendor/lib/vendor.qti.hardware.data.connection@1.0.so
-vendor/lib/vendor.qti.hardware.data.connection@1.1.so
-vendor/lib/vendor.qti.hardware.data.dynamicdds@1.0.so
-vendor/lib/vendor.qti.hardware.data.iwlan@1.0.so
-vendor/lib/vendor.qti.hardware.data.qmi@1.0.so
+# CNE | from J810MUBU2CTJ3 - QP1A.190711.020
+product/etc/permissions/vendor.qti.hardware.data.connection-V1.1-java.xml|620c9fa0047bb681e918af2d1e7a98c648f45fb7
+-product/framework/com.quicinc.cne.api-V1.1-java.jar|207b66fb9d79b4f06e0a67a0e82c19c1f3b2d210
+-product/framework/com.quicinc.cne.constants-V1.0-java.jar|96476b6df625fcd79d546faa097a20eb6360d858
+-product/framework/com.quicinc.cne.constants-V2.0-java.jar|847d4c453e6192da9374f0b01f72f28a297a65d1
+-product/framework/com.quicinc.cne.constants-V2.1-java.jar|133971526bcb9694f2a115f8bc78c3697db194cb
+-product/framework/vendor.qti.data.factory-V1.0-java.jar|f0a14b08ab6c2fb85342383235be6b75d67806fb
+-product/framework/vendor.qti.data.factory-V2.0-java.jar|df667317984cf08e06bad7957a6a6390fe5f2bb4
+-product/framework/vendor.qti.data.factory-V2.1-java.jar|3f8d28716003c02d9720c8c83a6d108a82359eae
+-product/framework/vendor.qti.data.slm-V1.0-java.jar|ef645973c076873a6d34258475d0ef3d6b22d253
+-product/framework/vendor.qti.hardware.data.cne.internal.api-V1.0-java.jar|54ae520a46436578d07f48c0baf4f1a6e700ebe7
+-product/framework/vendor.qti.hardware.data.cne.internal.constants-V1.0-java.jar|5983596a1fb2b32d090dc3869aaf8b80d83b661c
+-product/framework/vendor.qti.hardware.data.connection-V1.1-java.jar|a502d317d28d322fe375aa0fd1f46b32d016624a
+-product/framework/vendor.qti.hardware.data.dynamicdds-V1.0-java.jar|2d2d18476583ab286920313cf3add3a682bc2dea
+-product/framework/vendor.qti.hardware.data.iwlan-V1.0-java.jar|853b3d936a1c99c399ec5087051fb863ccebad4f
+-product/framework/vendor.qti.hardware.data.qmi-V1.0-java.jar|639835ac486039cb507fe6a7f0a42cae1aa3d6b9
+product/lib/com.quicinc.cne.api@1.0.so|e4d40254e681a7b344cf5345f680a8e2f4dbcc2d
+product/lib/com.quicinc.cne.api@1.1.so|150d25720a528a64ad657ad208b464eeff3d5203
+product/lib/com.quicinc.cne.constants@1.0.so|55afe243650fe43365a7a71c379ba964d616eb45
+product/lib/com.quicinc.cne.constants@2.0.so|9951a129379e1705bf8729f1aa0e143a8f3ef42a
+product/lib/com.quicinc.cne.constants@2.1.so|738a11322bf01cac3f68dc96acc7808853888b2f
+product/lib/vendor.qti.data.slm@1.0.so|be58e6e7ae2fab1f22be1d84bfe255ddd6433754
+product/lib/vendor.qti.hardware.data.connection@1.0.so|cb56b4c2447ccd6d984043f985641e4a73d7ed26
+product/lib/vendor.qti.hardware.data.connection@1.1.so|972757cb87aab2a346405e47743e22ffd461686a
+product/lib/vendor.qti.hardware.data.dynamicdds@1.0.so|d3f518a419c3f326e8ee9828433548fe3873fc0c
+product/lib/vendor.qti.hardware.data.iwlan@1.0.so|264662318643378572385cb03b6d7dbe39e2152f
+vendor/lib/libcneapiclient.so|d2da0d117e849584345f7230e93951591d788c15
+vendor/lib/libwms.so|cdda3c78adc0e7e851f7f3f497a5efcc9ed08d8f
+vendor/lib/libxml.so|22e4e29d2e07c952c1191e3295d371da2f79b826
+vendor/lib/vendor.qti.data.factory@1.0.so|9e9011e59618d5055ddb94ddb50c03c1b580ba7d
+vendor/lib/vendor.qti.data.factory@2.0.so|9a888f751e23ab6da56f46b1dc187380715c213a
+vendor/lib/vendor.qti.data.factory@2.1.so|ae2986e8c7fec0434b0c036a1b790df34fb8b679
+vendor/lib/vendor.qti.data.slm@1.0.so|be58e6e7ae2fab1f22be1d84bfe255ddd6433754
+vendor/lib/vendor.qti.hardware.data.cne.internal.api@1.0.so|2e82862b54ecd1f9aeb96520de9758003aa8abf5
+vendor/lib/vendor.qti.hardware.data.cne.internal.constants@1.0.so|cfec13db86279936ab958da3b3e16cb690329264
+vendor/lib/vendor.qti.hardware.data.cne.internal.server@1.0.so|8a94eca6876a54b1c4348c33e712813b284d4f64
+vendor/lib/vendor.qti.hardware.data.connection@1.0.so|cb56b4c2447ccd6d984043f985641e4a73d7ed26
+vendor/lib/vendor.qti.hardware.data.connection@1.1.so|972757cb87aab2a346405e47743e22ffd461686a
+vendor/lib/vendor.qti.hardware.data.dynamicdds@1.0.so|d3f518a419c3f326e8ee9828433548fe3873fc0c
+vendor/lib/vendor.qti.hardware.data.iwlan@1.0.so|264662318643378572385cb03b6d7dbe39e2152f
+vendor/lib/vendor.qti.hardware.data.qmi@1.0.so|6384742700c08ea65646c49184f01e67dc319a14
 
 # Camera | from J415NKOU2CTH5
 vendor/lib/hw/camera.msm8937.so|72e948d2a27fedf313e8c289ec5f277950758b1e
@@ -1092,23 +1099,25 @@ vendor/lib/vendor.display.color@1.2.so
 vendor/lib/vendor.display.postproc@1.0.so
 
 # QMI
-etc/permissions/qti_telephony_hidl_wrapper.xml
-etc/permissions/qti_telephony_utils.xml
-vendor/bin/irsc_util
-vendor/lib/libdiag.so
-vendor/lib/libdsutils.so
-vendor/lib/libidl.so
 vendor/lib/libminksocket.so
-vendor/lib/libqdi.so
-vendor/lib/libqdp.so
-vendor/lib/libqmi.so
-vendor/lib/libqmiservices.so
-vendor/lib/libqmi_cci.so
-vendor/lib/libqmi_client_helper.so
-vendor/lib/libqmi_client_qmux.so
-vendor/lib/libqmi_common_so.so
-vendor/lib/libqmi_csi.so
-vendor/lib/libqmi_encdec.so
+
+# QMI | from J810MUBU2CTJ3 - QP1A.190711.020
+etc/permissions/qti_telephony_hidl_wrapper.xml|9f2dd0b826a23342d0d87b4bb494be04567b1a85
+etc/permissions/qti_telephony_utils.xml|f041a383bb8472031f21f2ae4771c7d42c846c5e
+vendor/bin/irsc_util|9c731d8be9cae830c103004c9567998f0a13ecfc
+vendor/lib/libdiag.so|45fdbdf79c297769371be0fb9ebaa61279fadbea
+vendor/lib/libdsutils.so|63ababae50b481ede32cd34371e263007dff1a3c
+vendor/lib/libidl.so|2ec3add3d5077da39e33087d6e1302c4db4f73c2
+vendor/lib/libqdi.so|f5d67149097093dddd0769be9258a69efea18f31
+vendor/lib/libqdp.so|6f3d2545dcefcef590de0d3704b9b18e36670752
+vendor/lib/libqmi.so|56c4a3816ab11470c78892ec452f3d26be107775
+vendor/lib/libqmiservices.so|6d05e87723150e093206b7a653399c06cbcdaa50
+vendor/lib/libqmi_cci.so|683a9b6d3ee5639a902d74e185cee34f073d7c9b
+vendor/lib/libqmi_client_helper.so|835eb4dd0e8b771873c01b573a5bb17ba24030d3
+vendor/lib/libqmi_client_qmux.so|92021ae4d3204cef1e3800760502f27307479a6e
+vendor/lib/libqmi_common_so.so|eef7fb4c7f6d906ffaaaf06509399c3fad6dc864
+vendor/lib/libqmi_csi.so|d6647bafaa6d7170c59bd89b5940c7064c2fc23d
+vendor/lib/libqmi_encdec.so|76b4e7dc63e2b91c5c97b5e7b7d28ec5176c6c0f
 
 # Qdutils
 vendor/bin/hw/vendor.qti.hardware.qdutils_disp@1.0-service-qti
